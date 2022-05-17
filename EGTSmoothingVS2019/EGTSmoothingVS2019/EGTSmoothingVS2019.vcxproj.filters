@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="CUDA">
+      <UniqueIdentifier>{393c3a18-6adf-407e-aa28-9af918bae113}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{db224306-898c-4a0a-b456-99efd0370843}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{0fa44a7a-6744-4a86-a06c-1e63d059573e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="..\..\EGT.cu">
+      <Filter>CUDA</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\EGT.cuh">
+      <Filter>CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Arrays.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CCreoPointCloud.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CPointCloud.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MCLSEXST.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\CCreoPointCloud.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CPointCloud.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
