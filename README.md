@@ -20,7 +20,8 @@ the software in Windows using the VISUAL STUDIO 2019 and onwards tools.</i></p>
 solution of Visual Studio automatically. Provided that CGAL and BOOST are in the 
 "C:\Program Files\" directory or you have provided the necessary paths in the 
 environmental parameters and you have installed the CUDA toolkit with Visual Studio 
-integration, the process of generating the Visual Studio solution is straightforward.</p>
+integration, the process of generating the Visual Studio solution is straightforward.
+Please consider using the <a href="https://cmake.org/download/">cmake-gui tool</a>.</p>
 
 <p><b>VS2019 solution compilation</b></p>
 Please note that the VS solution uses the CUDA 11.6 target. If your CUDA version is different<br />
