@@ -1,5 +1,5 @@
 # EGTPointCloudSmoothing
-<p style="text-align: center">
+<p align="center">
 <img src="./images/image_result.jpg" alt="results" style="width: 45%;">    
 </p>
 
@@ -42,7 +42,7 @@ The fourth argument is the mu parameter.<br />
 The fifth parameter is the alpha parameter.<br />
 The sixth parameter (set to zero in our paper), 0 for use of the Gaussian weights of the paper.<br />
 The seventh parameter is the target smoothed point cloud as a text file of the form "x y z" for each line.
-<p style="text-align: center">
+<p align="center">
 <img src="./images/Logo_En.jpg" alt="logo" style="width: 85%;">    
 </p>
 
