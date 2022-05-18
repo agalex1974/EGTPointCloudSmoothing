@@ -42,5 +42,6 @@ The seventh parameter is the target smoothed point cloud as a text file of the f
 <p align="center">
 <img src="./images/Logo_En.jpg" alt="logo" style="width: 85%;">    
 </p>
-
+<p>In the folder PointClouds we have provided the noisy point clouds (xyz format) and their associated ground-truth (ply format) in order to reproduce 
+  the results of the paper.</p>
 
