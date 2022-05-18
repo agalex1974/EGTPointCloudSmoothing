@@ -1,6 +1,6 @@
 # EGTPointCloudSmoothing
 <p align="center">
-<img src="./images/EGTVisualAbstract-final/slide1.PNG" alt="results">    
+<img src="./images/EGTVisualAbstract-final/Slide1.PNG" alt="results">    
 </p>
 
 <p><b>Elliptic Gabriel Smoothing of Point Clouds</b> accompanying software.</p>
