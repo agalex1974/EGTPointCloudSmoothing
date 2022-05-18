@@ -39,9 +39,10 @@ The fourth argument is the mu parameter.<br />
 The fifth parameter is the alpha parameter.<br />
 The sixth parameter (set to zero in our paper), 0 for use of the Gaussian weights of the paper.<br />
 The seventh parameter is the target smoothed point cloud as a text file of the form "x y z" for each line.
+<p>In the folder PointClouds we have provided the noisy point clouds (xyz format) and their associated ground-truth (ply format) in order to reproduce 
+  the results of the paper.</p>
 <p align="center">
 <img src="./images/Logo_En.jpg" alt="logo" style="width: 85%;">    
 </p>
-<p>In the folder PointClouds we have provided the noisy point clouds (xyz format) and their associated ground-truth (ply format) in order to reproduce 
-  the results of the paper.</p>
+
 
