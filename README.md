@@ -38,21 +38,21 @@ the C:\Program Files directory and CMAKE will find them automatically.
 This is though recommended as a last resort.</p>
 <p><b><i>CUDA installation</i></b></p>
 
-<p>Provided CUDA toolkit with Visual Studio integration are installed, 
+<p>Provided CUDA toolkit with Visual Studio integration is installed, 
 CMAKE will find CUDA for the specific Visual Studio chosen.</p>
 
 <p>Now everything is set to build the software using the cmake-gui tool.</p>
 
 <p><b>VS2019 solution compilation</b></p>
 <p>Please note that the existing VS solution uses the CUDA 11.6 target. If your CUDA version is different
-then you should right click on the solution EGTSmoothingVS2019 and choose Build Dependencies (Figure below left). Then a new dialog
-will open (Figure below right) where you can choose the cuda version you have.</p>
+then you should right click on the solution EGTSmoothingVS2019 and choose Build Dependencies (Figure below). Then a new dialog
+will open (Figure below) where you can choose the cuda version you have.</p>
 <p align="center">
 <img src="./images/buid_dependencies.png" alt="results" style="max-width: 40%;"><img src="./images/build_customizations.png" alt="results">        
 </p>
 
 
-<p>Also please set appropriately the environmental variables $(BOOST_DIR)=$(BOOST_ROOT), $(CGAL_INCLUDE)=$(CGAL_DIR)\include .</p>
+<p>Also please set appropriately the environmental variables "$(BOOST_DIR)=$(BOOST_ROOT)", "$(CGAL_INCLUDE)=$(CGAL_DIR)\include" .</p>
 <p><b>Execution</b></p>
 The program is executed as:<br />
 <br />
