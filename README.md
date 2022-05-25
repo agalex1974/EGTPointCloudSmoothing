@@ -51,8 +51,8 @@ will open (Figure below) where you can choose the cuda version you have.</p>
 <img src="./images/buid_dependencies.png" alt="results"><img src="./images/build_customizations.png" alt="results">        
 </p>
 
+<p>Also please set appropriately the environmental variables $(BOOST_DIR) = $(BOOST_ROOT), $(CGAL_INCLUDE) = $(CGAL\_DIR)\include .</p>
 
-<p>Also please set appropriately the environmental variables \$(BOOST\_DIR)=\$(BOOST\_ROOT), \$(CGAL\_INCLUDE)=\$(CGAL\_DIR)\include .</p>
 <p><b>Execution</b></p>
 The program is executed as:<br />
 <br />
