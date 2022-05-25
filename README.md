@@ -9,15 +9,41 @@
 <p><i>Note: This software requires an NVIDIA Graphics card with Compute Capability 5.0 and higher 
 and <a href="https://developer.nvidia.com/cuda-toolkit">CUDA</a> preferably 
 of version 11 and higher. This software requires <a href="https://www.cgal.org/">CGAL</a> and as a 
-consequence also <a href="https://www.boost.org/">BOOST</a>. The process to compile
+consequence also <a href="https://sourceforge.net/projects/boost/">BOOST</a>. The process to compile
 the software in Windows using the VISUAL STUDIO 2019 and later tools is described below.</i></p> 
 
 <p>A CMAKE and a Microsoft VS2019 solution is provided in the repository.</p>
 <p><b>CMAKE Compilation</b></p>
-<p>This is the most advisable way to build the software as it will build the 
-solution of Visual Studio automatically. Provided that CGAL and BOOST and CUDA toolkit with Visual Studio 
-integration are installed, the process of generating the Visual Studio solution is straightforward.
 Please consider using the <a href="https://cmake.org/download/">cmake-gui tool</a>.</p>
+<p>This is the most advisable way to build the software as it will build the 
+solution of Visual Studio automatically. The software is dependent from two
+libraries., Boost and CGAL. A guide to install both is provided below.</p> 
+<p><b><i>Boost installation</i></b></p>
+<p>The most easy way to install boost is to visit <a href="https://sourceforge.net/projects/boost/">this</a> link. Please choose 
+to download a file like boost_1_79_0-msvc-14.1-64.exe. This file installs the BOOST library in 
+a directory that the user selects, let it be D:\Dev\boost_1_79_0.</p>
+<p>The user then needs to set the environmental variables: <br />
+BOOST_ROOT pointing to D:\Dev\boost_1_79_0<br />
+BOOST_INCLUDEDIR pointing to D:\Dev\boost_1_79_0<br />
+BOOST_LIBRARYDIR pointing to D:\Dev\boost_1_79_0\lib64-msvc-14.1<br/>
+Now CMake will be able to find Boost in the system.
+</p>
+<p><b><i>CGAL installation</i></b></p>
+<p>Suppose that <a href="https://github.com/CGAL/cgal/releases/download/v5.4/CGAL-5.4.zip">this</a> version
+of CGAL is downloaded and unzipped to directory: D:\Dev\CGAL-5.4 then the following environmetal variable needs
+to be set:<br />
+CGAL_DIR pointing to D:\Dev\CGAL-5.4 <br/>
+Now CMAKE can find CGAL.
+</p>
+<p>Alternatively CGAL and BOOST directories can be installed in 
+the C:\Program Files directory and CMAKE will find them automatically.
+This is though recommended as a last resort.</p>
+<p><b><i>CUDA installation</i></b></p>
+
+<p>Provided CUDA toolkit with Visual Studio integration are installed, 
+CMAKE will find CUDA for the specific Visual Studio chosen.</p>
+
+<p>Now everything is set to build the software using the cmake-gui tool.</p>
 
 <p><b>VS2019 solution compilation</b></p>
 Please note that the existing VS solution uses the CUDA 11.6 target. If your CUDA version is different<br />
