@@ -53,7 +53,7 @@ will open (Figure below) where you can choose the cuda version you have.</p>
 
 <p>Also please set appropriately the environmental variables:<br />
 <img src="./images/envvar.png" alt="results">
-</p?  
+</p>  
 
 <p><b>Execution</b></p>
 The program is executed as:<br />
