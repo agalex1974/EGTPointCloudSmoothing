@@ -8,20 +8,18 @@
 
 <p><i>Note: This software requires an NVIDIA Graphics card with Compute Capability 5.0 and higher 
 and <a href="https://developer.nvidia.com/cuda-toolkit">CUDA</a> preferably 
-of version 11 and higher. This software requires <a href="https://www.cgal.org/">CGAL</a> and as a 
-consequence also <a href="https://sourceforge.net/projects/boost/">BOOST</a>. The process to compile
+of version 11 and higher. This software requires <a href="https://www.cgal.org/">CGAL</a> and <a href="https://sourceforge.net/projects/boost/">BOOST</a>. The process to compile
 the software in Windows using the VISUAL STUDIO 2019 and later tools is described below.</i></p> 
 
 <p>A CMAKE and a Microsoft VS2019 solution is provided in the repository.</p>
 <p><b>CMAKE Compilation</b></p>
 Please consider using the <a href="https://cmake.org/download/">cmake-gui tool</a>.</p>
 <p>This is the most advisable way to build the software as it will build the 
-solution of Visual Studio automatically. The software is dependent from two
-libraries., Boost and CGAL. A guide to install both is provided below.</p> 
+solution of Visual Studio automatically. The software depends on CGAL and BOOST. A guide to install both libraries is provided below.</p> 
 <p><b><i>Boost installation</i></b></p>
 <p>The most easy way to install boost is to visit <a href="https://sourceforge.net/projects/boost/">this</a> link. Please choose 
 to download a file like boost_1_79_0-msvc-14.1-64.exe. This file installs the BOOST library in 
-a directory that the user selects, let it be D:\Dev\boost_1_79_0.</p>
+a directory that the user selects, for example D:\Dev\boost_1_79_0.</p>
 <p>The user then needs to set the environmental variables: <br />
 BOOST_ROOT pointing to D:\Dev\boost_1_79_0<br />
 BOOST_INCLUDEDIR pointing to D:\Dev\boost_1_79_0<br />
@@ -46,15 +44,17 @@ CMAKE will find CUDA for the specific Visual Studio chosen.</p>
 <p>Now everything is set to build the software using the cmake-gui tool.</p>
 
 <p><b>VS2019 solution compilation</b></p>
-Please note that the existing VS solution uses the CUDA 11.6 target. If your CUDA version is different<br />
-you need to edit the file EGTSmoothingVS2019.vcxproj<br />
-and replace in the two lines:<br />
-<i>Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 11.6.props"</i><br />
-<i>Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 11.6.targets"</i><br />
-The cuda version you have.<br />
-Also please set appropriately the environmental variables $(BOOST_DIR), $(CGAL_INCLUDE) where CGAL and BOOST include directories exist.<br />
+<p>Please note that the existing VS solution uses the CUDA 11.6 target. If your CUDA version is different
+then you should right click on the solution EGTSmoothingVS2019 and choose Build Dependencies (Figure below left). Then a new dialog
+will open (Figure below right) where you can choose the cuda version you have.</p>
+<p align="center">
+<img src="./images/buid_dependencies.png" alt="results" style="max-width: 40%;"><img src="./images/build_customizations.png" alt="results">        
+</p>
+
+
+<p>Also please set appropriately the environmental variables $(BOOST_DIR)=$(BOOST_ROOT), $(CGAL_INCLUDE)=$(CGAL_DIR)\include .</p>
 <p><b>Execution</b></p>
-If a binary executable is successfully built, for example EGTSmoothingVS2019.exe, the program is executed as:<br />
+The program is executed as:<br />
 <br />
 EGTSmoothingVS2019.exe cad_complex_noise.xyz 75 0.63 -0.64 0.75 0 cad_complex_smoothed_egt.xyz<br />
 <br/>
