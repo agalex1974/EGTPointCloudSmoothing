@@ -48,7 +48,7 @@ CMAKE will find CUDA for the specific Visual Studio chosen.</p>
 then you should right click on the solution EGTSmoothingVS2019 and choose Build Dependencies (Figure below left). Then a new dialog
 will open (Figure below right) where you can choose the cuda version you have.</p>
 <p align="center">
-<img src="./images/buid_dependencies.png" alt="results"><img src="./images/buid_customizations.png" alt="results">        
+<img src="./images/buid_dependencies.png" alt="results" style="max-width: 40%;"><img src="./images/build_customizations.png" alt="results">        
 </p>
 
 
